@@ -1,21 +1,12 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Django Girls blog</title>
-    </head>
-    <body>
-        <header>
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </header>
+{% extends 'blog/base.html' %}
 
-        {% for p in posts %}
-            <hr>    
-            <article>
-                <h2><a href="">{{ p.title }}</a></h2>
-                <p>{{ p.content|linebreaksbr }}</p>
-                <time>Published: {{ p.published_date }}</time>
-            </article>
-        {% endfor %}
-
-    </body>
-</html>
+{% block content %}
+    {% for p in posts %}   
+        <article>
+            <h2><a style="text-decoration: none" href="{% url 'detailed_post' pk=p.pk %}">{{ p.title }}</a></h2>
+            <p class="texts">{{ p.content|linebreaksbr }}</p>
+            <time>Published: {{ p.published_date }}</time>
+        </article>
+        <hr>
+    {% endfor %}
+{% endblock %}
