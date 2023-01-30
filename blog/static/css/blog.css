@@ -6,11 +6,12 @@ h2 a {
     background-color: #dc143c;
     color: #ffffff;
     padding: 20px 20px 20px 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     margin-left: 0px;
 }
 
 .content {
+    clear: both;
     padding: 20px 20px 20px 20px;
 }
 
@@ -19,4 +20,28 @@ h2 a {
     width: 1350px;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+  }
+
+li {
+    float: left;
+}
+
+li a{
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover{
+    color: #dc143c;
 }
