@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% include 'blog/new_post_feature.html' %}
+    <h2>New Blog Post</h2>
+    <div style="clear: both;">
+        <form method="POST" class="post-fomr" style="clear: both;">{% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="save btn btn-secondary">Save</button>
+        </form>
+    </div>
+{% endblock %}
