@@ -1,3 +1,3 @@
-# my-first-blog 
+# My-Personal-website 
 
-Created using Django in python
+Created using the Django web framework in python
