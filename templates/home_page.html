@@ -1,7 +1,129 @@
 {% extends 'base.html' %}
 
 {% block content %}
+    <div class="homegrid">
+        <div>
+            <section>
+                <h1>Hey, I'm Ganesh!</h1>
 
-    <h1>About me</h1>
+                <p>
+                    Greetings and welcome to my portfolio! I am thrilled to share with you my academic and 
+                    professional journey as an MS in Computer Science student, where I have gained 
+                    a comprehensive understanding of various computer technologies and their applications.
+                    <br><br>
+                    In this portfolio, you will find projects that demonstrate my problem-solving skills and 
+                    innovative approaches to solving real-world challenges. 
+                    Thank you for visiting, and I hope you enjoy exploring my work!
+
+                </p>
+                <hr>
+
+                <h1>About Me</h1>
+                <p>
+                    Hi, I am Ganesh Rohit Basam. I am highly motivated and skilled computer science master's student at Rutgers University with a 4.0 GPA, 
+                    seeking a challenging software development internship in the US. 
+                </p>
+                <p> 
+                    With 2 years of experience at Amadeus Software Labs, 
+                    I have developed expertise in C++ and Python, and have contributed to back-end development, 
+                    file processing, and UI development. I have also implemented new features in revenue accounting areas and improved CI/CD pipelines, earning recognition for my efforts. 
+                </p>
+                <p>
+                    In addition, I have completed several successful projects in pathfinding algorithms, Bluetooth-based home automation, and image classification using machine learning.
+                    I am dedicated to continuously growing my technical and leadership skills. I am eager to bring my passion, skills, and experience to a dynamic and innovative software development team.
+                </p>
+            </section>
+            <hr>
+            <!--
+            <section style="display: flex; gap: 25px;">
+                <button type="button" style="border: 1px solid; border-radius: 10px;
+                    border-color: #24292f; background-color: rgb(237, 244, 251); width: 25%;">
+                    <a href="https://drive.google.com/file/d/1tF-wjw0MFu6PM5EIjvPKpdhJs8sAEKJR/view?usp=sharing" 
+                        style="color: #24292f; text-decoration: none; padding-left: 30px; padding-right: 30px;
+                        font-size: 25px;">
+                        Resume/CV
+                    </a>
+                </button>
+                <button type="button" style="border: 1px solid; border-radius: 10px;
+                    border-color: #24292f; background-color: #0a66c2; width: 25%;">
+                    <a href="https://www.linkedin.com/in/ganesh79/" 
+                        style="color: white; text-decoration: none; padding-left: 30px; padding-right: 30px;
+                        font-size: 25px;">
+                        LinkedIn
+                    </a>
+                </button>
+                <button type="button" style="border: 1px solid; border-radius: 10px;
+                    border-color: #24292f; background-color: whitesmoke; width: 25%;">
+                    <a href="mailto:ganeshrohit.basam@rutgers.edu" 
+                        style="color: #24292f; text-decoration: none; padding-left: 30px; padding-right: 30px;
+                        font-size: 25px;">
+                        Mail
+                    </a>
+                </button>
+            </section> -->
+            <section>
+                <h2>Education</h2>
+                <h5>Rutgers University - New Brunswick, NJ</h5>
+                <p style="margin: 0px;">&nbsp; MS in Computer Science (Sep 2022 - May 2024)</p>
+                <p style="margin: 0px;">&nbsp; Coursework: Data Structures and Algorithms, Internet Services, Database Systems, 
+                        Machine Learning</p>
+                <br>
+                <h5>Shiv Nadar University - UP, India</h5>
+                <p style="margin: 0px;">&nbsp; BTech. in Electronics & Communication Engineering (July 2016 - May 2020)</p>
+                
+            </section>
+            <hr>
+            <section>
+                <h2>Contact </h2>
+                <p>
+                You can contact me at 'ganeshrohit.basam@rutgers.edu' or 'bg.rohit@gmail.com'
+                </p>
+            </section>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        <div>
+            <div class="myPic" style="background-color: rgb(237, 244, 251); border-radius: 10px; max-width: 75%">
+                <h4 style="margin-bottom: 0px; padding-left: 20px; padding-top: 2px;">Me</h4>
+                <img src="../static/MyPic.jpg" style="max-width: 100%; height: 300px; 
+                        padding: 5px 20px 20px 20px;" >
+            </div>
+            <br>
+            <section">
+                <button type="button" style="border: 1px solid; border-radius: 10px; margin-bottom: 10px;
+                    border-color: #24292f; background-color: rgb(237, 244, 251); width: 75%;">
+                    <a href="https://drive.google.com/file/d/1tF-wjw0MFu6PM5EIjvPKpdhJs8sAEKJR/view?usp=sharing" 
+                        style="color: #24292f; text-decoration: none; padding-left: 30px; padding-right: 30px;
+                        font-size: 25px;">
+                        {% include './icons/resume.svg' %} Resume/CV
+                    </a>
+                </button><br>
+                <button type="button" style="border: 1px solid; border-radius: 10px; margin-bottom: 10px;
+                    border-color: #24292f; background-color: #0a66c2; width: 75%;">
+                    <a href="https://www.linkedin.com/in/ganesh79/" 
+                        style="color: white; text-decoration: none; padding-left: 30px; padding-right: 30px;
+                        font-size: 25px;">
+                        {% include './icons/linkedin.svg' %} LinkedIn
+                    </a>
+                </button><br>
+                <button type="button" style="border: 1px solid; border-radius: 10px; margin-bottom: 10px;
+                    border-color: #24292f; background-color: whitesmoke; width: 75%;">
+                    <a href="mailto:ganeshrohit.basam@rutgers.edu" 
+                        style="color: #24292f; text-decoration: none; padding-left: 30px; padding-right: 30px;
+                        font-size: 25px;">
+                        {% include './icons/envelope.svg' %} Mail
+                    </a>
+                </button>
+            </section>
+            <!--
+            <div class="AddPic" style="background-color: rgb(237, 244, 251); border-radius: 10px; max-width: 75%">
+                <h4 style="margin-bottom: 0px; padding-left: 20px; padding-top: 2px;">Rutgers in Fall</h4>
+                <img src="../static/RUInFall.jpg" style="max-width: 100%; height: 300px;
+                        padding: 5px 20px 20px 20px;" >
+            </div>
+            -->
+        </div>
+    
+    </div>
+    
 
 {% endblock %}

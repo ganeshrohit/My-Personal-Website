@@ -2,6 +2,7 @@
 
 {% block content %}
     {% include 'blog/new_post_feature.html' %}
+    <br><br>
     {% for p in posts %}   
         <article>
             <h2><a style="text-decoration: none" href="{% url 'detailed_post' pk=p.pk %}">{{ p.title }}</a></h2>
