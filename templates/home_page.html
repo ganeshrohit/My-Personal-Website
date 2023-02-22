@@ -1,8 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div class="homegrid">
-        <div>
+    <!-- <div class="homegrid"> -->
+    <div class="row">
+        <div class="col-lg-8 px-4">
+            <div class="px-1">
             <section>
                 <h1>Hey, I'm Ganesh!</h1>
 
@@ -64,12 +66,12 @@
             <section>
                 <h2>Education</h2>
                 <h5>Rutgers University - New Brunswick, NJ</h5>
-                <p style="margin: 0px;">&nbsp; MS in Computer Science (Sep 2022 - May 2024)</p>
-                <p style="margin: 0px;">&nbsp; Coursework: Data Structures and Algorithms, Internet Services, Database Systems, 
-                        Machine Learning</p>
+                <p style="margin: 3.5px;">MS in Computer Science (Sep 2022 - May 2024)</p>
+                <p style="margin: 3.5px;">Coursework: Data Structures and Algorithms, Internet Services, Database Systems, 
+                        Machine &nbsp; Learning</p>
                 <br>
                 <h5>Shiv Nadar University - UP, India</h5>
-                <p style="margin: 0px;">&nbsp; BTech. in Electronics & Communication Engineering (July 2016 - May 2020)</p>
+                <p style="margin: 3.5px;">BTech. in Electronics & Communication Engineering (July 2016 - May 2020)</p>
                 
             </section>
             <hr>
@@ -79,13 +81,14 @@
                 You can contact me at 'ganeshrohit.basam@rutgers.edu' or 'bg.rohit@gmail.com'
                 </p>
             </section>
+            </div>
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </div>
-        <div>
-            <div class="myPic" style="background-color: rgb(237, 244, 251); border-radius: 10px; max-width: 75%">
-                <h4 style="margin-bottom: 0px; padding-left: 20px; padding-top: 2px;">Me</h4>
-                <img src="../static/MyPic.jpg" style="max-width: 100%; height: 300px; 
-                        padding: 5px 20px 20px 20px;" >
+        <div class="col-lg-4 px-4">
+            <div class="myPic card" style="background-color: rgb(237, 244, 251); border-radius: 10px; max-width: 75%">
+                <h4 style="margin-bottom: 0px; padding-left: 34px; padding-top: 2px;">Me</h4>
+                <img src="../static/MyPic.jpg" style="
+                        padding: 5px 34px 20px 34px;" >
             </div>
             <br>
             <section">

@@ -5,9 +5,8 @@ h2 a {
 .heading {
     background-color: #24292f;
     color: #ffffff;
-    padding: 20px 20px 20px 92px;
-    margin-bottom: 0px;
-    margin-left: 0px;
+    /*max-width: 90%; */
+    padding: 22px 0px 8px 71px;
 }
 
 .content {
@@ -16,15 +15,18 @@ h2 a {
 }
 
 .NavBar {
-    padding-left: 92px;
-    padding-right: 196px;
+    /*padding-left: 92px;*/
+    max-width: 90%; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 5px;
     background-color: #24292f;
 }
 
 .texts {
     white-space: pre;
-    width: 1350px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -62,8 +64,8 @@ li a:hover{
 
 .homegrid{
     display: grid;
-    grid-template-columns: auto 350px;
-    gap: 120px;
+    grid-template-columns: auto 20;
+    gap: 100px;
 }
 
 /* CSS file won't get updated without a hard reload on firefox.*/
