@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Ganesh Rohit</title>
         <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-16x16.png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
@@ -12,16 +13,16 @@
     <body>
         <main>
             <section style="background-color: #24292f;">
-                <div class="heading container-lg">
-                    <heade style="color: white;">
+                <div class="heading container-xl px-3 px-sm-5">
+                    <header class="ps-xl-5" style="color: white;">
                         <h1><a style="text-decoration: none; color: white;" href="/">Ganesh Rohit <span style="font-size: x-large;">(గణేష్ రోహిత్)</span></a></h1>
                     </header>
                 </div>
             </section>
             
             <section style="background-color: #24292f;">
-                <nav class="navbar navbar-expand container-lg" style="padding-left: 71px;">
-                    <ul>
+                <nav class="navbar navbar-expand container-xl px-3 px-sm-5">
+                    <ul class="ps-xl-5">
                         <li><a href="/" aria-current="page">Home</a></li>
                         <li><a href="/blog/">Blog</a></li>
                         <li><a href="/">Projects</a></li>
@@ -42,9 +43,11 @@
 
             <section>
                 <!--<div class="content" style="margin-left: auto; margin-right: auto; max-width: 90%;"> -->
-                <div class="container-lg" style="padding-left: 55px; padding-right: 55px; padding-top: 20px;">
-                    {% block content %}
-                    {% endblock %}
+                <div class="container-xl px-3 px-sm-5" style="padding-top: 20px;">
+                    <div class="ps-xl-5">
+                        {% block content %}
+                        {% endblock %}
+                    </div>
                 </div>
             </section>
         </main>
